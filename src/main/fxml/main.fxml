@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="550.0" prefWidth="90.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXHamburger layoutX="9.0" layoutY="14.0" />
+            <VBox layoutX="-2.0" layoutY="120.0" prefHeight="199.0" prefWidth="96.0" spacing="15.0">
+               <children>
+                  <JFXButton fx:id="btnHome" prefHeight="32.0" prefWidth="98.0" text="Home">
+                      <graphic>
+                          <FontAwesomeIconView glyphName="HISTORY" selectionFill="#792e2e" size="18" style="-fx-fill:white;" wrappingWidth="16.619140625" />
+                      </graphic> 
+                  </JFXButton>
+                  <JFXButton prefHeight="31.0" prefWidth="96.0" />
+                  <JFXButton prefHeight="25.0" prefWidth="99.0" />
+                  <JFXButton prefHeight="25.0" prefWidth="100.0" />
+                  <JFXButton prefHeight="25.0" prefWidth="104.0" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <cursor>
+   </cursor>
+</BorderPane>
