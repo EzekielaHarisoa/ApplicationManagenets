@@ -1,7 +1,35 @@
-/*
- * Empty Stylesheet file.
- */
 
 .mainFxmlClass {
 
+}
+.sidebar{
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e5e7eb;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.05),10,0,0,2);
+}
+.sidebar-btn{
+    -fx-background-color: transparent;
+    -fx-text-fill: #4f46e5;
+    -fx-font-size:14px;
+    -fx-font-weight:bold;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 20 10 20;
+    -fx-cursor: hand;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-content-display: LEFT;
+    -fx-spacing: 10;
+    -fx-opacity: 0.9;
+    -fx-transition:all 0.2s ease-in-out;
+}
+.sidebar-btn:hover{
+    -fx-background-color: #eef2ff;
+    -fx-opacity: 1;
+}
+.jfx-hamburger{
+    -fx-background-color: transparent;
+}
+.jfx-hamburger-line{
+    -fx-stroke: #e5e7eb;
+    -fx-stroke-width: 2;
 }
