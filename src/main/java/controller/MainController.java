@@ -3,6 +3,8 @@ package main.java.controller;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXHamburger;
+import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
+import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.animation.KeyFrame;
@@ -13,6 +15,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
+import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
@@ -36,11 +39,25 @@ public class MainController implements Initializable {
     private JFXHamburger btnBurgeur;
     @FXML
     private VBox insidebar;
+    @FXML
+    private JFXButton btnRevenue;
+    @FXML
+    private Button btnTest;
     
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+         FontAwesomeIconView home=new FontAwesomeIconView(FontAwesomeIcon.HOME);     
+         FontAwesomeIconView stud=new FontAwesomeIconView(FontAwesomeIcon.USER);
+         FontAwesomeIconView history=new FontAwesomeIconView(FontAwesomeIcon.HISTORY);           
+         FontAwesomeIconView revenue=new FontAwesomeIconView(FontAwesomeIcon.MONEY);         
+         FontAwesomeIconView facture=new FontAwesomeIconView(FontAwesomeIcon.PRINT);
+           
+         btnHome.setGraphic(home); 
+         btnStudent.setGraphic(stud);
+         btnHistory.setGraphic(history);
+         btnFacturation.setGraphic(facture);
+         btnRevenue.setGraphic(revenue);
     }    
 
     @FXML
@@ -90,7 +107,7 @@ public class MainController implements Initializable {
             isOpen[0] = false;
 
         }else if(isOpen[0]=false){
-            timeline.getKeyFrames().add(new KeyFrame(Duration.millis(300),new KeyValue(insidebar.prefHeightProperty(),120)));
+            timeline.getKeyFrames().add(new KeyFrame(Duration.millis(300),new KeyValue(insidebar.prefHeightProperty(),125)));
             btnHome.setText("Dashboard");
             btnStudent.setText("Student");
             btnHistory.setText("Historique");

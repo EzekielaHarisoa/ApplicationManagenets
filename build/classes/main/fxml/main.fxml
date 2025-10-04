@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXHamburger?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import java.lang.String?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -9,20 +10,33 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.MainController">
    <left>
-      <AnchorPane fx:id="sidebar" prefHeight="550.0" prefWidth="111.0" styleClass="sidebar" stylesheets="@../../ressources/css/main.css" BorderPane.alignment="CENTER">
+      <AnchorPane fx:id="sidebar" prefHeight="550.0" prefWidth="119.0" styleClass="sidebar" stylesheets="@../../ressources/css/main.css" BorderPane.alignment="CENTER">
          <children>
             <JFXHamburger fx:id="btnBurgeur" layoutX="14.0" layoutY="14.0" onMouseClicked="#handleBurgeur" stylesheets="@../../ressources/css/main.css">
                <styleClass>
                   <String fx:value="jfx-hamburger" />
                   <String fx:value="jfx-hamburger-line" />
                </styleClass></JFXHamburger>
-            <VBox fx:id="insidebar" layoutX="14.0" layoutY="120.0" prefHeight="244.0" prefWidth="125.0">
+            <VBox fx:id="insidebar" layoutX="-1.0" layoutY="120.0" prefHeight="244.0" prefWidth="136.0">
                <children>
-                  <JFXButton fx:id="btnHome" onAction="#handleHome" prefHeight="42.0" prefWidth="144.0" styleClass="sidebar-btn" text="Home" />
-                  <JFXButton fx:id="btnStudent" onAction="#handleStudent" prefHeight="43.0" prefWidth="149.0" styleClass="sidebar-btn" text="Student" />
-                  <JFXButton fx:id="btnHistory" onAction="#handleHistory" prefHeight="47.0" prefWidth="156.0" styleClass="sidebar-btn" text="History" />
-                  <JFXButton fx:id="btnStudent1" onAction="#handleStudent" prefHeight="43.0" prefWidth="149.0" styleClass="sidebar-btn" text="Revenue" />
-                  <JFXButton fx:id="btnFacturation" onAction="#handleFacture" prefHeight="47.0" prefWidth="149.0" styleClass="sidebar-btn" text="Facturation" />
+                  <JFXButton fx:id="btnHome" graphicTextGap="10.0" onAction="#handleHome" prefHeight="42.0" prefWidth="144.0" styleClass="sidebar-btn" text="Dashboard" />
+                  <JFXButton fx:id="btnStudent" graphicTextGap="10.0" onAction="#handleStudent" prefHeight="43.0" prefWidth="149.0" styleClass="sidebar-btn" text="Student">
+                     <graphic>
+                        <FontAwesomeIconView styleClass="logo" />
+                     </graphic></JFXButton>
+                  <JFXButton fx:id="btnHistory" graphicTextGap="10.0" onAction="#handleHistory" prefHeight="47.0" prefWidth="156.0" styleClass="sidebar-btn" text="History">
+                     <graphic>
+                        <FontAwesomeIconView />
+                     </graphic></JFXButton>
+                  <JFXButton fx:id="btnRevenue" graphicTextGap="10.0" onAction="#handleStudent" prefHeight="43.0" prefWidth="149.0" styleClass="sidebar-btn" text="Earning">
+                     <graphic>
+                        <FontAwesomeIconView />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnFacturation" graphicTextGap="10.0" onAction="#handleFacture" prefHeight="47.0" prefWidth="149.0" styleClass="sidebar-btn" text="Facturation">
+                     <graphic>
+                        <FontAwesomeIconView />
+                     </graphic></JFXButton>
                </children>
             </VBox>
          </children>
