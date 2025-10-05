@@ -5,22 +5,12 @@
         <group>
             <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/Main.java</file>
             <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/ressources/css/main.css</file>
-            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/fxml/main.fxml</file>
             <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/java/controller/MainController.java</file>
             <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/java/controller/HomeController.java</file>
-            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/fxml/home.fxml</file>
             <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/ressources/css/home.css</file>
             <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/java/controller/StudentController.java</file>
+            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/ressources/css/dialodAdd.css</file>
             <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/ressources/css/student.css</file>
-            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/fxml/student.fxml</file>
-            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/fxml/historique.fxml</file>
-            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/ressources/css/historique.css</file>
-            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/java/controller/HistoriqueController.java</file>
-            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/java/controller/FacturationController.java</file>
-            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/fxml/facturation.fxml</file>
-            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/ressources/css/facturation.css</file>
-            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/fxml/ajoutDialog.fxml</file>
-            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/java/controller/AjoutDialogController.java</file>
         </group>
     </open-files>
 </project-private>

@@ -1,14 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.StudentController">
-    <stylesheets>
-        <URL value="@/ressources/css/student.css"/>
-    </stylesheets>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="831.0" stylesheets="@../../ressources/css/student.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.StudentController">
+   <children>
+      <VBox layoutX="13.0" layoutY="11.0" prefHeight="532.0" prefWidth="807.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <VBox prefHeight="534.0" prefWidth="801.0" styleClass="mainFxmlClass">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="801.0" spacing="10.0" styleClass="maVbox">
+                     <children>
+                        <TextField prefHeight="30.0" prefWidth="622.0" styleClass="textField" stylesheets="@../../ressources/css/student.css" text="Search students..." HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <JFXButton fx:id="btnAdd" alignment="TOP_CENTER" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="65.0" stylesheets="@../../ressources/css/student.css" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnFilter" alignment="TOP_CENTER" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="64.0">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <TableView fixedCellSize="10.0" focusTraversable="false" prefHeight="478.0" prefWidth="781.0" stylesheets="@../../ressources/css/student.css">
+                     <columns>
+                        <TableColumn prefWidth="86.0" resizable="false" text="Identification" />
+                        <TableColumn prefWidth="136.0" text="Nom" />
+                        <TableColumn prefWidth="120.0" text="Prenom" />
+                        <TableColumn prefWidth="118.0" text="Telephone" />
+                        <TableColumn prefWidth="97.0" text="Inscrit le" />
+                        <TableColumn prefWidth="108.0" text="Numero ATT" />
+                        <TableColumn prefWidth="112.0" text="Action" />
+                     </columns>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
 </AnchorPane>

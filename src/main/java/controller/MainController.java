@@ -2,24 +2,19 @@
 package main.java.controller;
 
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXHamburger;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.animation.KeyFrame;
-import javafx.animation.KeyValue;
-import javafx.animation.Timeline;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
-import javafx.util.Duration;
 
 public class MainController implements Initializable {
 
@@ -35,8 +30,7 @@ public class MainController implements Initializable {
     private JFXButton btnFacturation;
     @FXML
     private AnchorPane mainContent;
-    @FXML 
-    private JFXHamburger btnBurgeur;
+ 
     @FXML
     private VBox insidebar;
     @FXML
@@ -93,31 +87,7 @@ public class MainController implements Initializable {
         mainContent.getChildren().add(root);
     }
     
-    @FXML
-    private void handleBurgeur(MouseEvent event) {
-        boolean[] isOpen = {true};
-        Timeline timeline = new Timeline();
-        if (isOpen[0]=true) {
-            timeline.getKeyFrames().add(new KeyFrame(Duration.millis(300), new KeyValue(insidebar.prefWidthProperty(), 50)));
-            btnHome.setText("");
-            btnStudent.setText("");
-            btnHistory.setText("");
-            btnFacturation.setText("");
-            System.out.println("je fonctionne bitn");
-            isOpen[0] = false;
-
-        }else if(isOpen[0]=false){
-            timeline.getKeyFrames().add(new KeyFrame(Duration.millis(300),new KeyValue(insidebar.prefHeightProperty(),125)));
-            btnHome.setText("Dashboard");
-            btnStudent.setText("Student");
-            btnHistory.setText("Historique");
-            btnFacturation.setText("Facturaction");
-            isOpen[0]=true;           
-            System.out.println("je fonctionne aussi");
-            
-        }
-        timeline.play();
-    }
+    
    
    
 }

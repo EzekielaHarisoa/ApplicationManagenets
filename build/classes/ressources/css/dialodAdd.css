@@ -1,0 +1,54 @@
+.mere{
+    -fx-background-color: #ffffff;
+     -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+.head{
+    -fx-background-color: #4285f4;
+    -fx-background-radius: 4px;
+    
+}
+.label1{
+    -fx-text-fill: white;
+    -fx-font-size:18px;
+    -fx-font-weight:bold;
+    -fx-font-family:"poppins",sans-Serif;
+}
+.vbox0{
+         -fx-background-color: transparent;
+
+}
+.vbox1{
+     -fx-background-color: #ffffff;
+     -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+.textField{
+    -fx-background-color: #e8f0fe;
+    -fx-background-radius: 8;
+    -fx-prompt-text-fill:#7a8ca0;
+    -fx-text-fill:#1e2a78;
+    -fx-font-size:14px;
+    -fx-border-color: transparent;
+
+}
+.titre{
+    -fx-font-size:12px;
+    -fx-text-fill: #6b7280;
+}
+.button{
+      -fx-background-color: #4285f4;
+    -fx-background-radius: 12;
+     -fx-pref-width:780;
+    -fx-pref-heigth:60;
+    -fx-alignment: CENTER;
+        -fx-font-size:14px;
+        -fx-font-weigth:60;
+        -fx-text-fill: white;
+        fx-cursor:hand;
+        -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.05),5,0,0,2);
+        -fx-boder-color:#e5e7fg;
+        -fx-border-radius: 12;
+        fx-transition:all 0.2s ease-in-out;
+ 
+}
