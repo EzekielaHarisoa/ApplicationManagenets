@@ -25,17 +25,18 @@
     -fx-padding: 0 10 0 0;
 }
 .textField{
-    -fx-background-color: #e8f0fe;
+    -fx-background-color: transparent;
     -fx-background-radius: 8;
     -fx-prompt-text-fill:#7a8ca0;
     -fx-text-fill:#1e2a78;
-    -fx-font-size:14px;
-    -fx-border-color: transparent;
+    -fx-font-size:11px;
+    -fx-border-color: #e8f0fe;
+    -fx-border-radius: 8px;
 
 
 }
 .textField:focus{
-    -fx-background-color: #ffffff;
+    -fx-background-color: #e8f0fe;
 
 }
 .textField-icon{
@@ -64,7 +65,7 @@
     -fx-background-color: #e8f0fe;
 }
 .table-view .column-header .label{
-    -fx-text-fill: #4285f4;
+    -fx-text-fill: #7a8ca0;
     -fx-fon-weight:bold;
     -fx-font-size:12px;
 
@@ -84,4 +85,13 @@
     -fx-padding: 8;
     -fx-font-size:13px;
     -fx-text-fill: #3340f1;
+}
+
+/*section de filter*/
+.cardFilter{
+    
+}
+.cardFilter-soustitre{
+    -fx-font-size:12px;
+    -fx-text-fill: #9ca3af;
 }

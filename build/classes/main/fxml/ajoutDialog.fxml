@@ -2,7 +2,6 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXComboBox?>
-<?import com.jfoenix.controls.JFXDialog?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
@@ -12,91 +11,80 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
+<StackPane xmlns="http://javafx.com/javafx/17"
+           xmlns:fx="http://javafx.com/fxml/1"
+           prefWidth="950.0" prefHeight="550.0"
+           styleClass="bg-light"
+           stylesheets="@../../ressources/css/tailwindLight.css">
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="367.0" styleClass="mere" stylesheets="@../../ressources/css/dialodAdd.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <JFXDialog />
-      <AnchorPane prefHeight="200.0" prefWidth="200.0">
-         <children>
-            <VBox layoutX="104.0" layoutY="39.0" prefHeight="531.0" prefWidth="358.0" styleClass="vbox0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <children>
-                  <HBox alignment="CENTER" prefHeight="52.0" prefWidth="369.0" styleClass="head" stylesheets="@../../ressources/css/dialodAdd.css">
-                     <children>
-                        <Label prefHeight="25.0" prefWidth="150.0" styleClass="label1" text="Add new student">
-                           <HBox.margin>
-                              <Insets top="10.0" />
-                           </HBox.margin>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <VBox prefHeight="369.0" prefWidth="308.0" styleClass="vbox1">
-                     <children>
-                        <Label styleClass="titre" text="Nom" />
-                        <TextField prefHeight="28.0" prefWidth="255.0" styleClass="textField" />
-                        <Label styleClass="titre" text="Prenom">
-                           <VBox.margin>
-                              <Insets top="5.0" />
-                           </VBox.margin>
-                        </Label>
-                        <TextField prefHeight="28.0" prefWidth="252.0" styleClass="textField" />
-                        <Label styleClass="titre" text="Telephone">
-                           <VBox.margin>
-                              <Insets top="5.0" />
-                           </VBox.margin>
-                        </Label>
-                        <TextField prefHeight="28.0" prefWidth="263.0" styleClass="textField" />
-                        <Label styleClass="titre" text="Category">
-                           <VBox.margin>
-                              <Insets top="5.0" />
-                           </VBox.margin>
-                        </Label>
-                        <JFXComboBox prefHeight="30.0" prefWidth="256.0" styleClass="textField" />
-                        <Label styleClass="titre" text="Type de payement">
-                           <VBox.margin>
-                              <Insets top="5.0" />
-                           </VBox.margin>
-                        </Label>
-                        <JFXComboBox prefHeight="30.0" prefWidth="256.0" styleClass="textField" unFocusColor="#727070" />
-                        <Label styleClass="titre" text="Date Examen Code">
-                           <VBox.margin>
-                              <Insets top="5.0" />
-                           </VBox.margin>
-                        </Label>
-                        <DatePicker prefHeight="30.0" prefWidth="254.0" styleClass="textField" />
-                        <Label styleClass="titre" text="Date Examen Conduite">
-                           <VBox.margin>
-                              <Insets top="5.0" />
-                           </VBox.margin>
-                        </Label>
-                        <DatePicker prefHeight="30.0" prefWidth="254.0" styleClass="textField" />
-                     </children>
-                     <VBox.margin>
-                        <Insets left="20.0" right="20.0" />
-                     </VBox.margin>
-                     <padding>
-                        <Insets bottom="5.0" left="20.0" right="20.0" top="10.0" />
-                     </padding>
-                  </VBox>
-                  <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="294.0" spacing="5.0">
-                     <children>
-                        <JFXButton prefHeight="30.0" prefWidth="176.0" text="Annuler">
-                           <HBox.margin>
-                              <Insets left="20.0" right="10.0" />
-                           </HBox.margin>
-                        </JFXButton>
-                        <JFXButton prefHeight="30.0" prefWidth="123.0" text="Enregistrer">
-                           <HBox.margin>
-                              <Insets right="20.0" />
-                           </HBox.margin>
-                        </JFXButton>
-                     </children>
-                     <VBox.margin>
-                        <Insets left="20.0" right="20.0" />
-                     </VBox.margin>
-                  </HBox>
-               </children>
+    <children>
+        <AnchorPane>
+            <VBox alignment="TOP_CENTER" spacing="30" 
+                  AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+                  AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                  styleClass="card">
+
+                <padding>
+                    <Insets top="30" right="30" bottom="30" left="30"/>
+                </padding>
+
+                <!-- Titre -->
+                <HBox alignment="CENTER">
+                    <Label text="➕ Ajouter un nouvel élève" styleClass="text-xl font-bold text-gray-800"/>
+                </HBox>
+
+                <!-- Formulaire -->
+                <VBox spacing="20">
+                    <!-- Ligne 1: Nom & Prenom -->
+                    <HBox spacing="20">
+                        <VBox spacing="5">
+                            <Label text="Nom" styleClass="text-gray-700 font-medium"/>
+                            <TextField fx:id="txtNom" promptText="Entrer le nom" styleClass="input-field"/>
+                        </VBox>
+                        <VBox spacing="5">
+                            <Label text="Prénom" styleClass="text-gray-700 font-medium"/>
+                            <TextField fx:id="txtPrenom" promptText="Entrer le prénom" styleClass="input-field"/>
+                        </VBox>
+                    </HBox>
+
+                    <!-- Ligne 2: Téléphone & Catégorie -->
+                    <HBox spacing="20">
+                        <VBox spacing="5">
+                            <Label text="Téléphone" styleClass="text-gray-700 font-medium"/>
+                            <TextField fx:id="txtTel" promptText="Ex: 034 12 345 67" styleClass="input-field"/>
+                        </VBox>
+                        <VBox spacing="5">
+                            <Label text="Catégorie" styleClass="text-gray-700 font-medium"/>
+                            <JFXComboBox fx:id="comboCategorie" promptText="Choisir une catégorie" styleClass="input-field"/>
+                        </VBox>
+                    </HBox>
+
+                    <!-- Ligne 3: Paiement & Date examen code -->
+                    <HBox spacing="20">
+                        <VBox spacing="5">
+                            <Label text="Type de paiement" styleClass="text-gray-700 font-medium"/>
+                            <JFXComboBox fx:id="comboPaiement" promptText="Sélectionner un type" styleClass="input-field"/>
+                        </VBox>
+                        <VBox spacing="5">
+                            <Label text="Date examen code" styleClass="text-gray-700 font-medium"/>
+                            <DatePicker fx:id="dateCode" styleClass="input-field"/>
+                        </VBox>
+                    </HBox>
+
+                    <!-- Ligne 4: Date examen conduite -->
+                    <VBox spacing="5">
+                        <Label text="Date examen conduite" styleClass="text-gray-700 font-medium"/>
+                        <DatePicker fx:id="dateConduite" styleClass="input-field"/>
+                    </VBox>
+                </VBox>
+
+                <!-- Boutons -->
+                <HBox spacing="15" alignment="CENTER_RIGHT">
+                    <JFXButton text="Annuler" styleClass="btn-cancel"/>
+                    <JFXButton text="Enregistrer" styleClass="btn-save"/>
+                </HBox>
+
             </VBox>
-         </children>
-      </AnchorPane>
-   </children>
+        </AnchorPane>
+    </children>
 </StackPane>

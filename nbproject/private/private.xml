@@ -10,7 +10,11 @@
             <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/ressources/css/home.css</file>
             <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/java/controller/StudentController.java</file>
             <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/ressources/css/dialodAdd.css</file>
-            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/ressources/css/student.css</file>
+            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/fxml/benefice.fxml</file>
+            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/ressources/css/benefice.css</file>
+            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/java/controller/BeneficeController.java</file>
+            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/Config.java</file>
+            <file>file:/C:/Users/Ezekiela/Documents/NetBeansProjects/AutoEcoleManagements/src/main/fxml/ajoutDialog.fxml</file>
         </group>
     </open-files>
 </project-private>

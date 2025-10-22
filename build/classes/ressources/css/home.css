@@ -22,7 +22,7 @@
 .card-value{
     -fx-font-size:26px;
     -fx-font-weight:bold;
-    -fx-text-fill:#111827;
+    -fx-text-fill:#4285f4;
 }
 .card-sub{
     -fx-font-size:12px;
@@ -58,7 +58,7 @@
         -fx-font-size:14px;
         -fx-font-weigth:60;
         -fx-text-fill: #6b7280;
-        fx-cursor:hand;
+        fx-cursor:hand; 
         -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.05),5,0,0,2);
         -fx-boder-color:#e5e7fb;
         -fx-border-radius: 12;
